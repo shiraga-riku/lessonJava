@@ -9,7 +9,9 @@ public class ListUtil{
 			System.out.println(e);
 		}
 		System.out.println(replicate(20,"riku"));
-		System.out.println(zip(List.of(1,2,4,2),List.of(8,7,5)));
+		var first=List.of(1,2,4,2);
+		var second=List.of(8,7,5);
+		System.out.println(zip(first,second));
 	}
 
 	public static List <Integer> evensof(List<Integer>intList){
@@ -40,7 +42,8 @@ public class ListUtil{
 		}
 		for (int i=0;i<index;i++){
 			ArrayList<Integer> pair= new ArrayList<>();
-			pair.add(first.get(i),second.get(i));
+			pair.add(first.get(i));
+			pair.add(second.get(i));
 			pairs.add(pair);
 		}
 		return pairs;

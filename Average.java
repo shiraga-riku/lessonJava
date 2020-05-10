@@ -1,12 +1,10 @@
 public class Average{
 	public static void main (String[] args){
 		double average=0;
-		int x=0;
 		for(String arg:args){
 			average += Double.parseDouble(arg);
-			x++;
 		}
-		average=average/x;
+		average=average/args.length;
 		System.out.println(average);
 	}
 }

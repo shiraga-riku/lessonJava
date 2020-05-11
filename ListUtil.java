@@ -10,7 +10,7 @@ public class ListUtil{
 		}
 		System.out.println(replicate(20,"riku"));
 		var first=List.of(1,2,4,2);
-		var second=List.of(8,7,5);
+		var second=List.of(8,7,5,6,6);
 		System.out.println(zip(first,second));
 	}
 
@@ -47,5 +47,9 @@ public class ListUtil{
 			pairs.add(pair);
 		}
 		return pairs;
+	}
+
+	public static List<Integer> factors(){
+		
 	}
 }

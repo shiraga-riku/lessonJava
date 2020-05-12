@@ -12,6 +12,7 @@ public class ListUtil{
 		var first=List.of(1,2,4,2);
 		var second=List.of(8,7,5,6,6);
 		System.out.println(zip(first,second));
+		System.out.println(factors(0));
 	}
 
 	public static List <Integer> evensof(List<Integer>intList){
@@ -49,7 +50,25 @@ public class ListUtil{
 		return pairs;
 	}
 
-	public static List<Integer> factors(){
+	public static List<Integer> factors(int value){
+		List<Integer> factors=new ArrayList<>();
+		if (value==0){
+			return List.of(value);
+		} 
+		for (int factor = 1; factor <= value; factor++) {
+			if (value % factor == 0) {
+				factors.add(factor);
+			}
+		}
+		return factors;
+	}
+
+	// public static List<Integer> perfects(int value){
+
+	// }
+
+	public static List<E> pairs(List<E>list){
+		List<E> pairs=new ArrayList<>();
 		
 	}
 }
